@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:weightSum="1"
+      >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.6">
+
+          <ImageView
+              android:id="@+id/logo_welcome"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_centerInParent="true"
+              android:gravity="center"
+              android:src="@drawable/logo" />
+      </RelativeLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.4"
+          android:orientation="vertical"
+          android:paddingLeft="30dp"
+          android:paddingRight="30dp"
+          >
+
+          <android.support.design.widget.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <android.support.design.widget.TextInputEditText
+                  android:id="@+id/text_nombre_usuario"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/text_nombre_usuario"
+                  android:textColor="@color/colorIcons" />
+
+          </android.support.design.widget.TextInputLayout>
+
+          <android.support.design.widget.TextInputLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <android.support.design.widget.TextInputEditText
+                  android:id="@+id/text_password"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="@string/text_password"
+                  android:inputType="textPassword"
+                  android:textColor="@color/colorIcons" />
+
+          </android.support.design.widget.TextInputLayout>
+
+          <Button
+              android:id="@+id/btn_login"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/login"
+              android:theme="@style/RaisedButtonDark"
+              android:paddingTop="@dimen/botones_home"
+              />
+
+          <Button
+              android:id="@+id/btn_login_google"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/loginGoogle"
+              android:theme="@style/LogginWithGoogle"
+              android:paddingTop="@dimen/botones_home"
+              />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/forgot_password"
+              android:gravity="center"
+              android:textColor="@color/colorAccent"
+              android:paddingTop="@dimen/botones_home"
+              />
+
+
+      </LinearLayout>
+  </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
