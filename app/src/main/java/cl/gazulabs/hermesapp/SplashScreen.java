@@ -1,10 +1,8 @@
 package cl.gazulabs.hermesapp;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.ProgressBar;
 import android.os.Handler;
 import com.felipecsl.gifimageview.library.GifImageView;
 
@@ -12,6 +10,8 @@ import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
 import java.io.InputStream;
+
+import cl.gazulabs.hermesapp.view.MainActivity;
 
 public class SplashScreen extends AppCompatActivity {
 

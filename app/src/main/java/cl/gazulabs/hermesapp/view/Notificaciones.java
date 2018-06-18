@@ -1,13 +1,15 @@
-package cl.gazulabs.hermesapp;
+package cl.gazulabs.hermesapp.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Home extends AppCompatActivity {
+import cl.gazulabs.hermesapp.R;
+
+public class Notificaciones extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_notificaciones);
     }
 }
